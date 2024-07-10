@@ -1,0 +1,57 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dice-card {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 5rem;
+  border-radius: 25%;
+}
+
+.both-dice {
+  display: flex;
+  gap: 5rem;
+}
+
+.individual-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8;
+  flex-direction: column;
+}
+button {
+  margin: 0.5rem 0;
+  color: white;
+  padding: 0.5rem;
+  background-color: red;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rolling {
+  animation: roll 0.3s;
+}
